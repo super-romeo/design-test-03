@@ -148,6 +148,13 @@ footer a, footer p { color: #fff; }
 #start .tile select { background-color: #ffffff; color: #0a1524; border-color: #b9c3d2; }
 #start .tile .button:not(.quiet) { background: #12397a; border-color: #12397a; color: #ffffff; }
 footer { background: #081833; border-top: 1px solid rgba(255,255,255,.14); }
-/* ===== Shape 03: Small radius 6px everywhere ===== */
-:root { --radius-card: 6px; --radius-inner: 6px; --radius-field: 6px; --radius-pill: 6px; }
+/* ===== Shape 02: Medium radius, rounded-rectangle buttons ===== */
+:root { --radius-card: 1rem; --radius-inner: .75rem; --radius-field: .625rem; --radius-pill: .625rem; }
 header a { border-radius: var(--radius-field); }
+
+/* ===== Cards 03: Four in a row, picture on top ===== */
+.art { height: auto; aspect-ratio: 4 / 3; }
+@media (min-width: 768px) {
+.bento > *, .bento > .wide { grid-column: span 3; }
+.bento .tile { padding: 1.25rem; }
+}
